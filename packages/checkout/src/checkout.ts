@@ -20,11 +20,8 @@ export function applyPromo(cart: Cart, code: string): number {
   }
 
   const promo = resolvePromo(code);
-  if (promo === null) {
-    throw new PromoError(code);
-  }
 
-  return Math.round(cart.subtotal * (1 - promo.discount) * 100) / 100;
+  return Math.round(cart.subtotal * (1 - promo!.discount) * 100) / 100;
 }
 
 /** Recompute the cart subtotal from its line items. */
