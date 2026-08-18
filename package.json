@@ -1,0 +1,27 @@
+{
+  "name": "acme-shop",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "repro": "npx tsx scripts/repro.ts",
+    "start": "npx tsx packages/checkout/src/index.ts",
+    "typecheck": "npx --yes -p typescript@5 tsc --noEmit",
+    "repro:soft": "npx tsx scripts/repro-soft.ts",
+    "repro:exploit": "npx tsx scripts/repro-exploit.ts",
+    "repro:hallucination": "npx tsx scripts/repro-hallucination.ts",
+    "eval": "npx tsx evals/run.ts --set=curated",
+    "eval:all": "npx tsx evals/run.ts --set=all",
+    "eval:derive": "npx tsx evals/derive.ts",
+    "eval:fixed": "npx tsx evals/run.ts --set=all --prompt=evals/patches/support_agent.fixed.md",
+    "eval:overcorrected": "npx tsx evals/run.ts --set=all --prompt=evals/patches/support_agent.overcorrected.md"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

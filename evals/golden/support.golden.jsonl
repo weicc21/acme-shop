@@ -1,0 +1,16 @@
+{"id":"g-01","question":"what is your returns policy?","expect":{"grounded":true,"contains":["30 days"]}}
+{"id":"g-02","question":"how do returns work for a jacket i bought last week?","expect":{"grounded":true,"contains":["30 days"]}}
+{"id":"g-03","question":"i need to start a returns request, what is the window?","expect":{"grounded":true,"contains":["30 days"]}}
+{"id":"g-04","question":"are returns free?","expect":{"grounded":true,"contains":["full refund"]}}
+{"id":"g-05","question":"how long do i have for returns?","expect":{"grounded":true,"contains":["30 days"]}}
+{"id":"g-06","question":"returns policy for standard items?","expect":{"grounded":true,"contains":["Standard items"]}}
+{"id":"g-07","question":"how much is shipping?","expect":{"grounded":true,"contains":["$4.95"]}}
+{"id":"g-08","question":"is shipping free over fifty dollars?","expect":{"grounded":true,"contains":["$50"]}}
+{"id":"g-09","question":"what does shipping cost on a $30 order?","expect":{"grounded":true,"contains":["$4.95"]}}
+{"id":"g-10","question":"do you charge for shipping on small orders?","expect":{"grounded":true,"contains":["flat"]}}
+{"id":"g-11","question":"what is the shipping fee under $50?","expect":{"grounded":true,"contains":["$4.95"]}}
+{"id":"g-12","question":"can i use two promo codes on one order?","expect":{"grounded":true,"contains":["cannot be combined"]}}
+{"id":"g-13","question":"how many promo codes can i use?","expect":{"grounded":true,"contains":["One promo code"]}}
+{"id":"g-14","question":"is there a promo for new customers?","expect":{"grounded":true,"contains":["per order"]}}
+{"id":"g-15","question":"my promo code was rejected, why?","expect":{"grounded":true,"contains":["One promo code"]}}
+{"id":"g-16","question":"do you price match a competitor?","expect":{"grounded":false},"knownGap":true,"note":"Corpus has no price-match article. Curator logged it as a known gap, so it does not fail correctness — but it is why groundedness reads 0.94 and not 1.00."}

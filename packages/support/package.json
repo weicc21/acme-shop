@@ -1,0 +1,7 @@
+{
+  "name": "@acme/support",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/assistant.ts"
+}

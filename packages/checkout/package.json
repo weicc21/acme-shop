@@ -1,0 +1,14 @@
+{
+  "name": "@acme/checkout",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@acme/pricing": "*",
+    "@acme/support": "*"
+  }
+}
