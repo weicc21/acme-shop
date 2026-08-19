@@ -23,6 +23,8 @@ export function handleApplyPromo(body: { cartId: string; code: string }) {
 
   try {
     const subtotal = applyPromo(cart, body.code);
+    // Persist the discount so the cart reflects what the customer will pay.
+    cart.subtotal = subtotal;
     log("info", "promo applied", { cartId: cart.id, code: body.code });
     return { status: 200, body: { total: finalTotal(subtotal) } };
   } catch (err) {
